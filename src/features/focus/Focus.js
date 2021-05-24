@@ -9,7 +9,7 @@ export const  Focus = ({ addSubject }) => {
   const [subject, setSubject] = useState(null)
   return (
     <View style ={styles.container}>
-        <View style={styles.titleContainer}><Text style = {styles.title}>What would you like to focus on?</Text>
+        <View style={styles.innerContainer}><Text style = {styles.title}>What would you like to focus on?</Text>
         <View style = { styles.inputContainer }>
         <TextInput style={{flex: 1, marginRight: spacing.md }}
         onSubmitEditing={
@@ -27,10 +27,10 @@ export const  Focus = ({ addSubject }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-  },
-  titleContainer: {
     flex: 0.5,
+  },
+  innerContainer: {
+    flex: 1,
     padding: spacing.md,
     justifyContent: "center"
   },
